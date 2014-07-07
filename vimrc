@@ -48,3 +48,8 @@ if has("autocmd")
 else
   endif " has("autocmd")
  
+
+set nohlsearch
+map <F2> :set hls!<CR>
+set wrap
+map <F3> :set wrap!<CR>
