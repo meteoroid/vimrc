@@ -67,3 +67,5 @@ map <D-7> 7gt
 map <D-8> 8gt
 map <D-9> 9gt
 
+
+autocmd! bufwritepost .vimrc source %
