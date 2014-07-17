@@ -68,4 +68,13 @@ map <D-8> 8gt
 map <D-9> 9gt
 
 
+inoremap ( ()<esc>i
+inoremap [ []<esc>i
+inoremap { {}<esc>i
+inoremap < <><esc>i
+inoremap ' ''<esc>i
+inoremap " ""<esc>i
+inoremap <bar> <bar><bar><esc>i
+
+
 autocmd! bufwritepost .vimrc source %
