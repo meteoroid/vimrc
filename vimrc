@@ -12,6 +12,12 @@ set shiftwidth=4
 set tabstop=4
 set expandtab
 set noerrorbells
+set autoread
+set nrformats=alpha
+set nobackup
+set nowritebackup
+set noswapfile
+set laststatus=1
 
 
 " Switch syntax highlighting on, when the terminal has colors
