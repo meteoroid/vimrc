@@ -58,6 +58,7 @@ map <D-8> 8gt
 map <D-9> 9gt
 
 
+" Enter normal mode maps
 inoremap ( ()<esc>i
 inoremap [ []<esc>i
 inoremap { {}<esc>i
