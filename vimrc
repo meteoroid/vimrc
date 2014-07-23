@@ -37,12 +37,14 @@ else
   endif " has("autocmd")
 
 
+" Function key maps
 set nohlsearch
 map <F2> :set hls!<CR>
 set wrap
 map <F3> :set wrap!<CR>
 
 
+" Command key maps to create, close, and select tabs
 map <D-t> :tabnew<CR>
 map <D-w> :tabclose<CR>
 map <D-1> 1gt
