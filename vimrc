@@ -28,13 +28,15 @@ endif
 if has("autocmd")
   filetype plugin on
 
+  " Source .vimrc file after save
+  autocmd! bufwritepost .vimrc source %
+
   " Always jump to the last known cursor position
   autocmd BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
     \   exe "normal g`\"" |
     \ endif
-else
-  endif " has("autocmd")
+endif
 
 
 " Function key maps
@@ -64,7 +66,7 @@ imap jj <ESC>
 imap jk <ESC>
 
 
-" Paired character key maps
+" Character pairs maps
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {}<ESC>i
@@ -73,5 +75,3 @@ inoremap ' ''<ESC>i
 inoremap " ""<ESC>i
 inoremap <BAR> <BAR><BAR><ESC>i
 
-
-autocmd! bufwritepost .vimrc source %
