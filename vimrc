@@ -59,13 +59,19 @@ map <D-9> 9gt
 
 
 " Enter normal mode maps
-inoremap ( ()<esc>i
-inoremap [ []<esc>i
-inoremap { {}<esc>i
-inoremap < <><esc>i
-inoremap ' ''<esc>i
-inoremap " ""<esc>i
-inoremap <bar> <bar><bar><esc>i
+map ; :
+imap jj <ESC>
+imap jk <ESC>
+
+
+" Paired character key maps
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {}<ESC>i
+inoremap < <><ESC>i
+inoremap ' ''<ESC>i
+inoremap " ""<ESC>i
+inoremap <BAR> <BAR><BAR><ESC>i
 
 
 autocmd! bufwritepost .vimrc source %
